@@ -1,20 +1,33 @@
-'use client'
+'use client';
 import { useEffect } from 'react';
 
 declare global {
     interface Window {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        adsbygoogle: any[];
+        adsbygoogle: Array<Record<string, unknown>>;
     }
 }
 
 export default function AdComponent() {
     useEffect(() => {
-        if (typeof window !== "undefined") {
-            try {
-                (window.adsbygoogle = window.adsbygoogle || []).push({});
-            } catch (e) {
-                console.error("AdSense error:", e);
+        if (typeof window !== 'undefined') {
+            // Initialize window.adsbygoogle if it's undefined
+            window.adsbygoogle = window.adsbygoogle || [];
+
+            // Load the adsbygoogle.js script dynamically if not already loaded
+            if (!document.querySelector('script[src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]')) {
+                const script = document.createElement('script');
+                script.src = '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+                script.async = true;
+                script.onload = () => {
+                    window.adsbygoogle.push({});
+                };
+                document.head.appendChild(script);
+            } else {
+                try {
+                    window.adsbygoogle.push({});
+                } catch (e) {
+                    console.error('AdSense error:', e);
+                }
             }
         }
     }, []);
