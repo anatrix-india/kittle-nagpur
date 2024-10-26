@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { FaChevronDown } from 'react-icons/fa6'
 import { menu } from './data/menu'
 import { Language } from './types/menu'
+import AdComponent from './components/AdComponent'
 
 export default function DigitalMenu() {
   const [language, setLanguage] = useState<Language>('english')
@@ -51,47 +52,50 @@ export default function DigitalMenu() {
         </header>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {menu.map((item, index) => (
-            <div key={index} className="bg-orange-100 rounded-lg shadow-md overflow-hidden flex flex-col p-4">
-
-
-              <div className='flex gap-4'>
-                <div className="relative w-28">
-                  <Image
-                    src={item.image}
-                    alt={item.name[language]}
-                    layout="fill"
-                    objectFit="cover"
-                    className="rounded-lg"
-                  />
-                </div>
-                <div className=''>
-                  {item.tags.length > 0 && (
-                    <div className="flex ">
-                      {item.tags.map((tag: string, index: number) => (
-                        <span key={index} className="text-orange-600 font-semibold text-xs bg-white px-2 py-1 rounded-full">
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-                  <div className='flex'>
-                    <h2 className="text-lg font-semibold text-orange-800">{item.name[language]}</h2>
+            <div key={index}>
+              <div className="bg-orange-100 rounded-lg shadow-md overflow-hidden flex flex-col p-4">
+                <div className='flex gap-4'>
+                  <div className="relative w-28">
+                    <Image
+                      src={item.image}
+                      alt={item.name[language]}
+                      layout="fill"
+                      objectFit="cover"
+                      className="rounded-lg"
+                    />
                   </div>
-
-                  <p className="text-sm text-gray-600 ">{item.quantity}</p>
-                  <div className="flex gap-2 items-center text-orange-800">
-                    {item.off_price !== item.price && (
-                      <span className="font-bold">₹{item.off_price}</span>
+                  <div className=''>
+                    {item.tags.length > 0 && (
+                      <div className="flex ">
+                        {item.tags.map((tag: string, tagIndex: number) => (
+                          <span key={tagIndex} className="text-orange-600 font-semibold text-xs bg-white px-2 py-1 rounded-full">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
                     )}
-                    <span className={`font-bold ${item.off_price !== item.price ? 'line-through text-gray-500' : ''}`}>
-                      ₹{item.price}
-                    </span>
+                    <div className='flex'>
+                      <h2 className="text-lg font-semibold text-orange-800">{item.name[language]}</h2>
+                    </div>
+
+                    <p className="text-sm text-gray-600 ">{item.quantity}</p>
+                    <div className="flex gap-2 items-center text-orange-800">
+                      {item.off_price !== item.price && (
+                        <span className="font-bold">₹{item.off_price}</span>
+                      )}
+                      <span className={`font-bold ${item.off_price !== item.price ? 'line-through text-gray-500' : ''}`}>
+                        ₹{item.price}
+                      </span>
+                    </div>
                   </div>
                 </div>
-
               </div>
-
-
+              {/* Insert AdComponent after every 4 items */}
+              {(index + 1) % 4 === 0 && (
+                <div className="my-6">
+                  <AdComponent />
+                </div>
+              )}
             </div>
           ))}
         </div>
