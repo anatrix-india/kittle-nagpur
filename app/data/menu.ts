@@ -3,7 +3,7 @@ export const menu: MenuItem[] = [
   {
     "name": {
       "hindi": "केटली स्पेशल चाय",
-      "english": "Kitli Special Tea",
+      "english": "Ketli Special Tea",
       "marathi": "केटली स्पेशल चहा"
     },
     "quantity": "60 ml",
@@ -15,7 +15,7 @@ export const menu: MenuItem[] = [
   {
     "name": {
       "hindi": "केटली अदरक चाय",
-      "english": "Kitli Ginger Tea",
+      "english": "Ketli Ginger Tea",
       "marathi": "केटली आल्याचा चहा"
     },
     "quantity": "100 ml",
@@ -27,7 +27,7 @@ export const menu: MenuItem[] = [
   {
     "name": {
       "hindi": "केटली गुडकी चाय",
-      "english": "Kitli Jaggery Tea",
+      "english": "Ketli Jaggery Tea",
       "marathi": "केटली गूळ चहा"
     },
     "quantity": "100 ml",
@@ -39,7 +39,7 @@ export const menu: MenuItem[] = [
   {
     "name": {
       "hindi": "केटली शुगर फ्री टी",
-      "english": "Kitli Sugar-Free Tea",
+      "english": "Ketli Sugar-Free Tea",
       "marathi": "केटली शुगर फ्री चहा"
     },
     "quantity": "100 ml",
@@ -51,7 +51,7 @@ export const menu: MenuItem[] = [
   {
     "name": {
       "hindi": "केटली लेमन टी",
-      "english": "Kitli Lemon Tea",
+      "english": "Ketli Lemon Tea",
       "marathi": "केटली लिंबू चहा"
     },
     "quantity": "100 ml",
@@ -63,7 +63,7 @@ export const menu: MenuItem[] = [
   {
     "name": {
       "hindi": "केटली ब्लॅक टी",
-      "english": "Kitli Black Tea",
+      "english": "Ketli Black Tea",
       "marathi": "केटली ब्लॅक टी"
     },
     "quantity": "100 ml",
@@ -75,7 +75,7 @@ export const menu: MenuItem[] = [
   {
     "name": {
       "hindi": "केटली ग्रीन टी",
-      "english": "Kitli Green Tea",
+      "english": "Ketli Green Tea",
       "marathi": "केटली ग्रीन टी"
     },
     "quantity": "100 ml",
@@ -87,7 +87,7 @@ export const menu: MenuItem[] = [
   {
     "name": {
       "hindi": "केटली चॉकलेट टी",
-      "english": "Kitli Chocolate Tea",
+      "english": "Ketli Chocolate Tea",
       "marathi": "केटली चॉकलेट चहा"
     },
     "quantity": "100 ml",
@@ -99,7 +99,7 @@ export const menu: MenuItem[] = [
   {
     "name": {
       "hindi": "केटली गोल्डन मिल्क",
-      "english": "Kitli Golden Milk",
+      "english": "Ketli Golden Milk",
       "marathi": "केटली गोल्डन दूध"
     },
     "quantity": "250 ml",
@@ -111,7 +111,7 @@ export const menu: MenuItem[] = [
   {
     "name": {
       "hindi": "केटली हॉट कॉफि",
-      "english": "Kitli Hot Coffee",
+      "english": "Ketli Hot Coffee",
       "marathi": "केटली गरम कॉफी"
     },
     "quantity": "100 ml",
@@ -123,7 +123,7 @@ export const menu: MenuItem[] = [
   {
     "name": {
       "hindi": "केटली कोल्ड कॉफि",
-      "english": "Kitli Cold Coffee",
+      "english": "Ketli Cold Coffee",
       "marathi": "केटली थंड कॉफी"
     },
     "quantity": "250 ml",
@@ -135,7 +135,7 @@ export const menu: MenuItem[] = [
   {
     "name": {
       "hindi": "केटली वनीला हॉट कॉफि",
-      "english": "Kitli Vanilla Hot Coffee",
+      "english": "Ketli Vanilla Hot Coffee",
       "marathi": "केटली व्हॅनिला गरम कॉफी"
     },
     "quantity": "100 ml",
@@ -147,7 +147,7 @@ export const menu: MenuItem[] = [
   {
     "name": {
       "hindi": "केटली धिक कोल्ड कॉफि",
-      "english": "Kitli Thick Cold Coffee",
+      "english": "Ketli Thick Cold Coffee",
       "marathi": "केटली घट्ट थंड कॉफी"
     },
     "quantity": "250 ml",
@@ -159,7 +159,7 @@ export const menu: MenuItem[] = [
   {
     "name": {
       "hindi": "केटली नींबू पानी",
-      "english": "Kitli Lemon Water",
+      "english": "Ketli Lemon Water",
       "marathi": "केटली लिंबू पाणी"
     },
     "quantity": "250 ml",
@@ -171,7 +171,7 @@ export const menu: MenuItem[] = [
   {
     "name": {
       "hindi": "केटली आम पन्ना",
-      "english": "Kitli Mango Panna",
+      "english": "Ketli Mango Panna",
       "marathi": "केटली आम पन्ह"
     },
     "quantity": "250 ml",
@@ -183,7 +183,7 @@ export const menu: MenuItem[] = [
   {
     "name": {
       "hindi": "केटली टोमॅटो सुप",
-      "english": "Kitli Tomato Soup",
+      "english": "Ketli Tomato Soup",
       "marathi": "केटली टोमॅटो सूप"
     },
     "quantity": "150 ml",
@@ -195,7 +195,7 @@ export const menu: MenuItem[] = [
   {
     "name": {
       "hindi": "केटली कुल्हड",
-      "english": "Kitli Clay Cup",
+      "english": "Ketli Clay Cup",
       "marathi": "केटली कुल्हड"
     },
     "quantity": "1 Piece",
@@ -207,7 +207,7 @@ export const menu: MenuItem[] = [
   {
     "name": {
       "hindi": "केटली कुल्हड चाय",
-      "english": "Kitli Clay Cup Tea",
+      "english": "Ketli Clay Cup Tea",
       "marathi": "केटली कुल्हड चहा"
     },
     "quantity": "80 ml",
@@ -219,7 +219,7 @@ export const menu: MenuItem[] = [
   {
     "name": {
       "hindi": "केटली क्रिम रोल",
-      "english": "Kitli Cream Roll",
+      "english": "Ketli Cream Roll",
       "marathi": "केटली क्रीम रोल"
     },
     "quantity": "1 Piece",
@@ -231,7 +231,7 @@ export const menu: MenuItem[] = [
   {
     "name": {
       "hindi": "केटली बन मस्का",
-      "english": "Kitli Bun Maska",
+      "english": "Ketli Bun Maska",
       "marathi": "केटली बन मस्का"
     },
     "quantity": "1 Piece",
@@ -243,7 +243,7 @@ export const menu: MenuItem[] = [
   {
     "name": {
       "hindi": "केटली जल",
-      "english": "Kitli Water",
+      "english": "Ketli Water",
       "marathi": "केटली पाणी"
     },
     "quantity": "500 ml",
