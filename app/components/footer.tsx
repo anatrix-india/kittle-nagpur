@@ -16,7 +16,7 @@ export default function Footer() {
                         <MdOutlineEmail className="h-6 w-6" />
                     </a>
                     <a
-                        href="https://www.instagram.com/your_instagram_handle"
+                        href="https://www.instagram.com/anatrix.in"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-2 rounded-full bg-white text-gray-700 hover:bg-gray-200 transition-colors duration-200"
