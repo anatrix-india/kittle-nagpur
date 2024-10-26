@@ -19,7 +19,11 @@ const AdsenseComponent = () => {
 
     const pushAd = useCallback(() => {
         try {
-            (window.adsbygoogle = window.adsbygoogle || []).push({});
+            (window.adsbygoogle = window.adsbygoogle || []).push({
+                push: function (): void {
+                    throw new Error('Function not implemented.');
+                }
+            });
         } catch (err) {
             console.error('Error pushing ad:', err);
         }
@@ -91,8 +95,8 @@ const AdsenseComponent = () => {
         return (
             <div className="overflow-hidden m-4">
                 <div className="text-sm text-gray-500 mb-2">Advertisement</div>
-                <div 
-                    className="bg-gray-100" 
+                <div
+                    className="bg-gray-100"
                     style={{
                         minWidth: '300px',
                         minHeight: '250px'
