@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import Head from 'next/head';
 import { Analytics } from '@vercel/analytics/react';
 import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "./components/footer";
+import AdSense from "./components/AdSense";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,16 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-      <meta name="google-adsense-account" content="ca-pub-3089469944509509"/>
-      <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3089469944509509"
-          crossOrigin="anonymous"
-        ></script>
-  
-        
-      </Head>
+      <head>
+        <AdSense pId="3089469944509509" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
