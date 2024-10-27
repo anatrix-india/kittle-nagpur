@@ -91,10 +91,10 @@ export default function DigitalMenu() {
                 </div>
               </div>
               {/* Insert AdComponent after every 4 items */}
-              {(index + 1) % 4 === 0 && (
-                <div className="my-6">
-                  <AdComponent />
-                </div>
+              {(index + 1) % 5 === 0 && (
+
+                <AdComponent />
+
               )}
             </div>
           ))}

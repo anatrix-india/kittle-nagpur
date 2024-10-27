@@ -30,6 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta httpEquiv="Content-Security-Policy" content="frame-ancestors 'self' https://www.google.com" />
         <AdSense pId="3089469944509509" />
       </head>
       <body
